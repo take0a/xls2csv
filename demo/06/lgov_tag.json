@@ -1,0 +1,35 @@
+{
+  "tag": true,
+  "input": "LGov_tag_基本データリスト_utf8.csv",
+  "output": "LGov_tag_output.csv",
+  "columns": [
+    {
+      "book": "001_住民基本台帳_基本データリスト【第2.1版】_20230929.xlsx",
+      "sheet": "基本データリスト（住民基本台帳）",
+      "table": "v",
+      "name": "w",
+      "tags": [
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u"
+      ]
+    }
+  ]
+}

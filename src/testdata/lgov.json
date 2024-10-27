@@ -1,0 +1,23 @@
+{
+  "input": "testdata/lgov_input.csv",
+  "output": "testdata/lgov_output.csv",
+  "tables": [
+    {
+      "book": "testdata/lgovテーブル定義書.xlsx",
+      "sheet": "グループ構成表",
+      "name": "g",
+      "alias": "b",
+      "description": "c"
+    }
+  ],
+  "columns": [
+    {
+      "book": "testdata/lgovテーブル定義書.xlsx",
+      "sheet": "基本データリスト（住民基本台帳）",
+      "table": "v",
+      "name": "w",
+      "alias": "d",
+      "description": "p"
+    }
+  ]
+}

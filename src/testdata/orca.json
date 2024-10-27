@@ -1,0 +1,22 @@
+{
+  "input": "testdata/orca_input.csv",
+  "output": "testdata/orca_output.csv",
+  "tables": [
+    {
+      "book": "testdata/orcaテーブル定義書.xlsx",
+      "sheet": "テーブル一覧",
+      "name": "c",
+      "alias": "b"
+    }
+  ],
+  "columns": [
+    {
+      "book": "testdata/orcaテーブル定義書.xlsx",
+      "sheet": "テーブル定義書_改",
+      "table": "h",
+      "name": "c",
+      "alias": "b",
+      "description": "g"
+    }
+  ]
+}

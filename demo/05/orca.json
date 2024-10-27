@@ -1,0 +1,22 @@
+{
+  "input": "ORCA_utf8.csv",
+  "output": "ORCA_output.csv",
+  "tables": [
+    {
+      "book": "テーブル定義書.xlsx",
+      "sheet": "テーブル一覧",
+      "name": "c",
+      "alias": "b"
+    }
+  ],
+  "columns": [
+    {
+      "book": "テーブル定義書.xlsx",
+      "sheet": "テーブル定義書_改",
+      "table": "h",
+      "name": "c",
+      "alias": "b",
+      "description": "g"
+    }
+  ]
+}
