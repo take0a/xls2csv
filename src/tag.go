@@ -59,7 +59,7 @@ func runTag(settings Settings) error {
 	return nil
 }
 
-// readTagTables は、全てのテーブル定義書のテーブルの論理名、説明を読み込む
+// readTagTables は、全てのテーブル定義書のテーブルのタグ項目を読み込む
 func readTagTables(settings *Settings) (map[string][]string, error) {
 	tableMap := map[string][]string{}
 	for _, table := range settings.Tables {
@@ -71,7 +71,7 @@ func readTagTables(settings *Settings) (map[string][]string, error) {
 	return tableMap, nil
 }
 
-// readTagTable は、一つのテーブル定義書のテーブルの論理名、説明を読み込む
+// readTagTable は、一つのテーブル定義書のテーブルのタグ項目を読み込む
 func readTagTable(setting Table, m map[string][]string) error {
 	name, _ := types.CellRef(setting.Name + "1").ToIndexes()
 	if name < 0 {
@@ -113,7 +113,7 @@ func readTagTable(setting Table, m map[string][]string) error {
 	return nil
 }
 
-// readTagColumns は、全てのテーブル定義書のカラムの論理名、説明を読み込む
+// readTagColumns は、全てのテーブル定義書のカラムのタグ項目を読み込む
 func readTagColumns(settings *Settings) (map[string][]string, error) {
 	columnMap := map[string][]string{}
 	for _, column := range settings.Columns {
@@ -125,7 +125,7 @@ func readTagColumns(settings *Settings) (map[string][]string, error) {
 	return columnMap, nil
 }
 
-// readTagColumn は、一つのテーブル定義書のカラムの論理名、説明を読み込む
+// readTagColumn は、一つのテーブル定義書のカラムのタグ項目を読み込む
 func readTagColumn(setting Column, m map[string][]string) error {
 	table, _ := types.CellRef(setting.Table + "1").ToIndexes()
 	if table < 0 {
@@ -173,7 +173,7 @@ func readTagColumn(setting Column, m map[string][]string) error {
 	return nil
 }
 
-// editTag は、テーブル定義情報を使用して CSV の論理名と説明を補完する
+// editTag は、テーブル定義情報を使用して CSV のタグ項目を補完する
 func editTag(record []string, tname string, tableMap, columnMap map[string][]string) ([]string, string) {
 	if len(record) == 0 {
 		return record, tname
